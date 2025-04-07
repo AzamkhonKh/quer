@@ -3,9 +3,7 @@
 
 void binary(int *, int, int);
 
-int main(
-    int argc,
-    char *argv[])
+int main(int argc, char *argv[])
 {
   int n;
   int *vet;
@@ -13,6 +11,7 @@ int main(
   n = atoi(argv[1]);
 
   vet = (int *)malloc(n * sizeof(int));
+
   if (vet == NULL)
   {
     printf("Allocatin Error.\n");
@@ -26,10 +25,7 @@ int main(
   return 0;
 }
 
-void binary(
-    int *vet,
-    int n,
-    int i)
+void binary(int *vet, int n, int i)
 {
   int j;
 

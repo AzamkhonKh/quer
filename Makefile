@@ -24,7 +24,7 @@ compile:
 # Run the executable inside the container
 # Usage: make run FILE_NAME=example.cpp
 run:
-	$(DOCKER_EXEC_CMD) ./$(EXECUTABLE)
+	$(DOCKER_EXEC_CMD) ./$(EXECUTABLE) 1 2
 
 # Debug the executable inside the container using gdb
 # Usage: make debug FILE_NAME=example.cpp
